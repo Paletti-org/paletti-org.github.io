@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+
+        <title>Paletti.org</title>
+
+        <!-- Meta-Angaben -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Lokale Dateien -->
+        <link rel="stylesheet" href="styles/style.css" />
+        <script type="text/javascript" src="js/template.js"></script>
+
+        <!-- Externe Dateien -->
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yantramanav&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div id="grid_layout">
+
+            <!-- Header -->
+            <script id="template_header">replace("header");</script>
+
+            <!-- Sidebar, aktuell ohne Funktion, dekorative Zwecke. -->
+            <div id="sidebar">
+                <i class="bi bi-file-earmark-code"></i>
+            </div>
+            
+            <!-- Navigation -->
+            <script id="template_nav">replace("nav");</script>
+            
+            <main>
+                                <!-- Ein paar Zeilennummern -->
+                <!-- TODO: programmatisch erzeugen. -->
+                <div id="linenumbers">
+                    <ul>
+                        <li>01</li>
+                        <li>02</li>
+                        <li>03</li>
+                        <li>04</li>
+                        <li>05</li>
+                        <li>06</li>
+                        <li>07</li>
+                        <li>08</li>
+                        <li>09</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                    </ul>
+                </div>
+
+                <p>
+                    Impressum <br><br>
+                    David Stille <br>
+                    Sonnenstr. 214 <br>
+                    44137 Dortmund <br><br>
+                    info@paletti.org
+                </p>
+            </main>
+            
+            <!-- Fußzeile -->
+            <!-- TODO: sollte immer am unteren Rand sichtbar bleiben -->
+            <script id="template_footer">replace("footer");</script>
+
+        </div>
+
+        <!-- Schreibmaschinen-Effekt 
+        <script type="text/javascript" src="js/typewriter.js"></script>
+        -->
+    </body>
+</html>
