@@ -37,6 +37,7 @@ nav {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     padding: 1em;
+    padding-bottom: 0;
     background-color: #252526;
     color: #f0f0f0;
 }
@@ -53,9 +54,15 @@ main {
 footer {
     grid-column: 1 / -1;
     grid-row: 4 / 5;
+    position: sticky;
+    bottom: 0;
     background-color: #007acc;
     color: #f0f0f0;
     line-height: 2em;
+}
+
+footer .extra {
+    display: none;
 }
 
 @media screen and (min-width:720px) {
@@ -92,6 +99,13 @@ footer {
         grid-row: 3 / 3;
     }
 
+    nav ul {
+        padding-top: 1em;
+    }
+
+    footer .extra {
+        display: inline;
+    }
 }
 
 nav .left {
@@ -113,6 +127,7 @@ nav .header {
 nav ul {
     list-style: none;
     line-height: 2em;
+    margin: 0;
 }
 
 nav a {
